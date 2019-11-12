@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Resources;
 
 namespace WpfApp1
 {
@@ -20,10 +21,14 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        string strLenguage = "";
+        Boolean boolInt = true;
         public MainWindow()
         {
             InitializeComponent();
+            boolInt = false;
         }
+       
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
